@@ -57,7 +57,7 @@ Resources:
       Source:
         Type: GITHUB
         Location: https://github.com/somveergithub/codepipeline.git
-        BuildSpec: buildspec.yml
+        BuildSpec: buildspec.yaml
         Auth:
             Type: OAUTH
             Resource: !Ref CodeBuildSourceCredential
