@@ -13,6 +13,13 @@ Parameters:
     AllowedPattern: '[A-Za-z0-9-]+'
     Default: main
 Resources:
+  rGlueDatabase:
+    Type: 'AWS::Glue::Database'
+    Properties:
+      CatalogId: "sample_db"
+      DatabaseInput:
+        Name: "First_DB"
+        Description: "Testing DB"
   CodeBuildServiceRole:
     Type: 'AWS::IAM::Role'
     Properties:
